@@ -1,0 +1,33 @@
+html {
+    font-size: 20px;
+}
+header {
+    background-color: #ffd062;
+    text-align: center;
+}
+nav {
+    background-color: #bc8c1c;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+main {
+    background-color: #ffe6ab;
+    padding: 0.5rem;
+}
+footer {
+    background-color: #ffd062;
+    text-align: center;
+}
+.movie-article {
+    background-color: #ffac42;
+    padding: 1rem 0.5rem;
+    margin: 1rem 0;
+}
+.title,
+.article-title,
+.footer-title {
+    margin: 0;
+}
+a.nav-link {
+    font-size: 1rem;
+}
