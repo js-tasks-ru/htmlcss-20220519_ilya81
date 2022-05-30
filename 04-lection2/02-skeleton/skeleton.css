@@ -15,7 +15,7 @@
     justify-content: space-between;
     gap: 16px;
 }
-.avatar-mini {
+.skeleton__avatar-mini {
     width: 64px;
     height: 64px;
     background: var(--grey-2);
@@ -30,17 +30,17 @@
     justify-content: center;
 }
 
-.fake-line {
+.skeleton__fake-line {
     height: 20px;
     background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
-.fake-line_small {
+.skeleton__fake-line_small {
     width: 20%
 }
-.fake-line_medium {
+.skeleton__fake-line_medium {
     width: 50%
 }
-.fake-line_big {
+.skeleton__fake-line_big {
     width: 75%
 }
