@@ -23,10 +23,6 @@
     list-style: none;
 }
 
-details > summary::marker, /* Latest Chrome, Edge, Firefox */
-details > summary::-webkit-details-marker /* Safari */ {
-    display: none;
-}
 .accordion__summary::marker {
     display: none;
 }
