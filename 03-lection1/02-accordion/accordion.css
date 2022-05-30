@@ -35,14 +35,14 @@ details > summary::-webkit-details-marker /* Safari */ {
     display: inline-block;
 }
 
-.arrow-marker {
+.accordion__arrow-marker {
     display: inline-block;
     width: 16px;
     height: 8px;
     float: right;
 }
 
-.accordion__item[open] .arrow-marker {
+.accordion__item[open] .accordion__arrow-marker {
     transform: rotate(180deg);
 }
 
