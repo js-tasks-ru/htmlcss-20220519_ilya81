@@ -36,7 +36,6 @@
     color: var(--black);
 }
 .histogram__view-link {
-    text-align: right;
     color: var(--blue);
 }
 
