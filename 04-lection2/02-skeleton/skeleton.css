@@ -22,7 +22,7 @@
     border-radius: 50%;
     flex: none;
 }
-.skeleton-rows {
+.skeleton__rows {
     display: flex;
     flex-direction: column;
     flex: auto;
