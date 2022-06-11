@@ -1,0 +1,11 @@
+.preview {
+    flex-grow: 1;
+    padding: 68px 168px;
+    background-color: var(--grey-5);
+}
+.preview__inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 30px;
+}
