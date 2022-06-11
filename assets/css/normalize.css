@@ -347,3 +347,15 @@ template {
 [hidden] {
     display: none;
 }
+
+/* Own styles
+   ========================================================================== */
+
+/**
+ * Hide default marker of 'details' tag
+ */
+
+details > summary::marker, /* Latest Chrome, Edge, Firefox */
+details > summary::-webkit-details-marker /* Safari */ {
+    display: none;
+}
