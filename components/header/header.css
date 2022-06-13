@@ -1,7 +1,7 @@
 .header {
     background: var(--white);
     border-bottom: var(--divider);
-    padding: 25px 168px 0 160px;
+    padding: 25px 0 0 0;
 }
 .header__top {
     display: flex;

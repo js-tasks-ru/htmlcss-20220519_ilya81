@@ -1,6 +1,6 @@
 .preview {
     flex-grow: 1;
-    padding: 68px 168px;
+    padding: 68px 0;
     background-color: var(--grey-5);
 }
 .preview__inner {
