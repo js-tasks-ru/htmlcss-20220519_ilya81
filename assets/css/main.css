@@ -31,6 +31,8 @@
     --main-text-color: var(--black);
 
     --divider: 1px solid var(--grey-2);
+
+    --gap-between-cards: 30px;
 }
 
 html, body {
