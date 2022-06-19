@@ -3,3 +3,7 @@
     font-family: "Inter";
     src: url("./Inter/static/Inter-Medium.ttf") format("ttf");
 }
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url("./Source_Sans_Pro/SourceSansPro-Regular.ttf") format("ttf");
+}
