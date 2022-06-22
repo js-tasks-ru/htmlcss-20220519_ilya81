@@ -1,0 +1,14 @@
+.preview {
+    flex-grow: 1;
+    padding: 68px 0;
+    background-color: var(--grey-5);
+
+    --gap-between-cards: 30px;
+    --max-cards-in-line: 3;
+}
+.preview__inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: var(--gap-between-cards);
+}
