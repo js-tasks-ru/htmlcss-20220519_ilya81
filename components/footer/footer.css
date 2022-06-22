@@ -22,3 +22,18 @@
     max-width: 640px;
     margin: 0 auto;
 }
+
+.footer_component-page {
+    background: var(--grey-1);
+    border-top: none;
+    padding: 56px 0;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--grey-3);
+    text-align: center;
+}
