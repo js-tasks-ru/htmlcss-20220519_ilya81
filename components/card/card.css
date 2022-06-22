@@ -1,7 +1,6 @@
 .card {
     box-sizing: border-box;
     width: calc( (100% - (var(--max-cards-in-line) - 1) * var(--gap-between-cards)) / var(--max-cards-in-line) );
-    min-width: 260px;
     height: 367px;
     background: var(--white);
     box-shadow: 0 2px 4px rgba(33, 36, 41, 0.05);
