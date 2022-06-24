@@ -1,0 +1,27 @@
+.background-box {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+@media (max-width: 2560px) {
+    .background-box {
+        background-image: url("./public/forest_2560.jpg");
+    }
+}
+@media (max-width: 1024px) {
+    .background-box {
+        background-image: url("./public/forest_1024.jpg");
+    }
+}
+@media (max-width: 768px) {
+    .background-box {
+        background-image: url("./public/forest_768.jpg");
+    }
+}
+@media (max-width: 400px) {
+    .background-box {
+        background-image: url("./public/forest_400.jpg");
+    }
+}
