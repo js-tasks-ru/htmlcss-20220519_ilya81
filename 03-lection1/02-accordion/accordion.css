@@ -33,9 +33,11 @@
 
 .accordion__arrow-marker {
     display: inline-block;
-    width: 16px;
-    height: 8px;
+    width: 18px;
+    height: 10px;
     float: right;
+    fill: none;
+    transform: translateY(50%);
 }
 
 .accordion__item[open] .accordion__arrow-marker {
