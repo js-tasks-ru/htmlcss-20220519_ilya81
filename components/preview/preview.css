@@ -6,6 +6,11 @@
     --gap-between-cards: 30px;
     --max-cards-in-line: 3;
 }
+@media (max-width: 980px) {
+    .preview {
+        --max-cards-in-line: 1;
+    }
+}
 .preview__inner {
     display: flex;
     flex-flow: row wrap;
