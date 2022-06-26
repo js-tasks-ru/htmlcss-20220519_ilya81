@@ -4,6 +4,8 @@
     --tooltip_background-color: var(--black);
 }
 .tooltip__icon {
+    width:24px;
+    height: 24px;
     cursor: pointer;
 }
 .tooltip__bubble {

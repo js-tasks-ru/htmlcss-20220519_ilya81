@@ -14,13 +14,7 @@
     }
 }
 .header__top-logo {
-    display: flex;
-    flex-flow: row wrap;
-    gap: 8px;
-}
-.header__logo-item {
-    width: 30px;
-    height: 30px;
+    height: 32px;
 }
 .header__top-right-corner {
     display: flex;
