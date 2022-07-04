@@ -1,9 +1,3 @@
-.radio__preview {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
 .radio-btn {
     position: relative;
 }
@@ -58,14 +52,4 @@
 .radio-btn__input:disabled ~ .radio-btn__state .radio-btn__control {
     background: var(--grey-2);
     border-color: var(--grey-2);
-}
-
-.radio-main-title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: var(--grey-3);
 }
