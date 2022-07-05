@@ -20,7 +20,7 @@
     background: var(--white);
     border: 1px solid var(--grey-2);
     border-radius: 8px;
-    width: 350px;
+    width: 100%;
     height: 56px;
 
     padding: 17px 24px;
@@ -45,15 +45,17 @@
     width: 24px;
     height: 24px;
     fill: var(--white);
+
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    transform: translateY(-50%);
+
     display: none;
 }
 .form-group_success .form-group__success-mark,
 .form-group_error .form-group__error-mark {
     display: block;
-    position: absolute;
-    top: 50%;
-    right: 18px;
-    transform: translateY(-50%);
 }
 .form-group_error .form-group__input {
     border-color: var(--red);
