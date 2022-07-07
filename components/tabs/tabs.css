@@ -1,0 +1,102 @@
+.tabs {
+    position: relative;
+
+    flex-grow: 1;
+    background-color: var(--grey-5);
+
+    --gap-between-cards: 30px;
+    --max-cards-in-line: 3;
+}
+@media (max-width: 980px) {
+    .tabs {
+        --max-cards-in-line: 1;
+    }
+}
+.tabs__scroller {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px;
+
+    border-bottom: var(--divider);
+    background: var(--white);
+
+    padding-top: 40px;
+    padding-left: calc((100vw - var(--width-container)) / 2);
+}
+@media (max-width: 980px) {
+    .tabs__scroller {
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+    }
+}
+.tabs__radio-ctrl {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+
+.tabs__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-3);
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.tabs__item-marker {
+    height: 5px;
+    background-color: transparent;
+}
+
+#all-components-tab:checked ~ .tabs__scroller .tabs__title[for="all-components-tab"],
+#elements-tab:checked ~ .tabs__scroller .tabs__title[for="elements-tab"],
+#containers-tab:checked ~ .tabs__scroller .tabs__title[for="containers-tab"],
+#templates-tab:checked ~ .tabs__scroller .tabs__title[for="templates-tab"] {
+    color: var(--main-text-color);
+}
+#all-components-tab:checked ~ .tabs__scroller .tabs__title[for="all-components-tab"] .tabs__item-marker,
+#elements-tab:checked ~ .tabs__scroller .tabs__title[for="elements-tab"] .tabs__item-marker,
+#containers-tab:checked ~ .tabs__scroller .tabs__title[for="containers-tab"] .tabs__item-marker,
+#templates-tab:checked ~ .tabs__scroller .tabs__title[for="templates-tab"] .tabs__item-marker {
+    background-color: var(--black);
+}
+
+.tabs__container {
+    padding: 68px 0;
+}
+.tabs__content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: var(--gap-between-cards);
+}
+
+.tabs__content_all {
+    display: none;
+}
+
+.tabs__content_elements {
+    display: none;
+}
+
+.tabs__content_containers {
+    display: none;
+}
+
+.tabs__content_templates {
+    display: none;
+}
+
+#all-components-tab:checked ~ .tabs__container .tabs__content_all {
+    display: flex;
+}
+#elements-tab:checked ~ .tabs__container .tabs__content_elements {
+    display: flex;
+}
+#containers-tab:checked ~ .tabs__container .tabs__content_containers {
+    display: flex;
+}
+#templates-tab:checked ~ .tabs__container .tabs__content_templates {
+    display: flex;
+}
