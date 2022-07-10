@@ -1,5 +1,10 @@
 .toggler {
     position: relative;
+
+    --toggler-width: 52px;
+    --toggler-height: 28px;
+    --toggler-icon-width: 25px;
+    --toggler-icon-height: 25px;
 }
 .toggler__input {
     position: absolute;
@@ -12,17 +17,21 @@
     gap: 12px;
 }
 .toggler__control {
-    box-sizing: border-box;
-    width: 52px;
-    height: 28px;
+    width: var(--toggler-width);
+    height: var(--toggler-height);
     background: var(--white);
     border: 1px solid var(--grey-2);
     border-radius: 16px;
     position: relative;
+
+    -webkit-transition: background var(--animation-duration) linear, border-color var(--animation-duration) linear;
+    -moz-transition: background var(--animation-duration) linear, border-color var(--animation-duration) linear;
+    -o-transition: background var(--animation-duration) linear, border-color var(--animation-duration) linear;
+    transition: background var(--animation-duration) linear, border-color var(--animation-duration) linear;
 }
 .toggler__icon {
-    width: 24px;
-    height: 24px;
+    width: var(--toggler-icon-width);
+    height: var(--toggler-icon-height);
     background: var(--grey-2);
     border-radius: 16px;
 
@@ -30,6 +39,11 @@
     top: 50%;
     left: 1px;
     transform: translate(0, -50%);
+
+    -webkit-transition:left var(--animation-duration) linear, background var(--animation-duration) linear;
+    -moz-transition: left var(--animation-duration) linear, background var(--animation-duration) linear;
+    -o-transition: left var(--animation-duration) linear, background var(--animation-duration) linear;
+    transition: left var(--animation-duration) linear, background var(--animation-duration) linear;
 }
 .toggler__title {
     font-style: normal;
@@ -44,8 +58,7 @@
 }
 .toggler__input:checked ~ .toggler__state .toggler__icon {
     background: var(--white);
-    left: initial;
-    right: 1px;
+    left: calc(var(--toggler-width) - var(--toggler-icon-width) - 1px);
 }
 
 .toggler__input:focus ~ .toggler__state .toggler__title {

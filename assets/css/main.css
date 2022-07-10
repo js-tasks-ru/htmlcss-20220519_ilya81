@@ -36,6 +36,8 @@
     --main-text-color: var(--black);
 
     --divider: 1px solid var(--grey-2);
+
+    --animation-duration: 300ms;
 }
 
 html, body {

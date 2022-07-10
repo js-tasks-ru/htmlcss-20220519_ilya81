@@ -20,6 +20,16 @@
     border-radius: 4px;
     position: relative;
 }
+.checkbox__shadow {
+    position: absolute;
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+    background: var(--black);
+    border-radius: 4px;
+
+    z-index: -1;
+}
 .checkbox__icon {
     width: 15px;
     height: 13px;
@@ -44,6 +54,22 @@
 }
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
     display: block;
+}
+
+.checkbox__input:checked ~ .checkbox__state .checkbox__shadow {
+    animation: flash var(--animation-duration) linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 40%;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(2);
+    }
 }
 
 .checkbox__input:focus ~ .checkbox__state .checkbox__title {
