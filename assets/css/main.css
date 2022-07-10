@@ -38,6 +38,7 @@
     --divider: 1px solid var(--grey-2);
 
     --width-container: 1110px;
+    --default-padding-for-small-screens: 16px;
 }
 
 html, body {
