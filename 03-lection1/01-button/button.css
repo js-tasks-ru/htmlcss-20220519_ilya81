@@ -58,3 +58,6 @@
 .button_alternate:disabled {
     border-color: var(--button-alternate);
 }
+.button:active {
+    transform: translateY(2px);
+}

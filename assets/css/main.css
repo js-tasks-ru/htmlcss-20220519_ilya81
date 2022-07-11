@@ -39,6 +39,8 @@
 
     --width-container: 1110px;
     --default-padding-for-small-screens: 16px;
+
+    --animation-duration: 300ms;
 }
 
 html, body {
