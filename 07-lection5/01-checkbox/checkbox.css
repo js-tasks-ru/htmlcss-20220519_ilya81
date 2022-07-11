@@ -20,16 +20,6 @@
     border-radius: 4px;
     position: relative;
 }
-.checkbox__shadow {
-    position: absolute;
-    box-sizing: border-box;
-    width: 28px;
-    height: 28px;
-    background: var(--black);
-    border-radius: 4px;
-
-    z-index: -1;
-}
 .checkbox__icon {
     width: 15px;
     height: 13px;
@@ -55,8 +45,17 @@
 .checkbox__input:checked ~ .checkbox__state .checkbox__icon {
     display: block;
 }
+.checkbox__input:checked ~ .checkbox__state .checkbox__control::after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    width: 28px;
+    height: 28px;
+    background: var(--black);
+    border-radius: 4px;
 
-.checkbox__input:checked ~ .checkbox__state .checkbox__shadow {
+    z-index: -1;
+
     animation: flash var(--animation-duration) linear;
     animation-fill-mode: forwards;
 }
