@@ -1,9 +1,9 @@
 .container {
-    max-width: 1110px;
+    max-width: var(--width-container);
     margin: 0 auto;
 }
 @media  (max-width: 980px) {
     .container {
-        padding: 0 16px;
+        padding: 0 var(--default-padding-for-small-screens);
     }
 }
