@@ -7,7 +7,7 @@
 @import '../../components/histogram/histogram.css';
 @import '../../components/nav/nav.css';
 @import '../../components/page/page.css';
-@import '../../components/preview/preview.css';
+@import '../../components/tabs/tabs.css';
 @import '../../components/component/component.css';
 
 :root {
@@ -36,6 +36,9 @@
     --main-text-color: var(--black);
 
     --divider: 1px solid var(--grey-2);
+
+    --width-container: 1110px;
+    --default-padding-for-small-screens: 16px;
 
     --animation-duration: 300ms;
 }
