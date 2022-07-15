@@ -40,7 +40,7 @@
     --width-container: 1110px;
     --default-padding-for-small-screens: 16px;
 
-    --animation-duration: 300ms;
+    --animation-duration: 250ms;
 }
 
 html, body {

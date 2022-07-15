@@ -4,9 +4,76 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./burger-menu.css">
+        <style>
+            .burger-menu-open__icon {
+                width: 24px;
+                height: 24px;
+            }
+        </style>
         <script defer src="./burger-menu.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        <button class="burger-menu-open" id="burger-menu-open">
+            <svg class="burger-menu-open__icon">
+                <use href="../../assets/images/icon-sprite.svg#burger"></use>
+            </svg>
+        </button>
 
+        <div class="burger-menu" id="burger-menu">
+            <div class="burger-menu__inner">
+                <div class="burger-menu__header">
+                    <div class="burger-menu__close" id="burger-menu-close">
+                        <svg class="burger-menu__close-icon">
+                            <use href="../../assets/images/icon-sprite.svg#cross2"></use>
+                        </svg>
+                    </div>
+                    <svg class="burger-menu__main-logo">
+                        <use href="../../assets/images/icon-sprite.svg#main-logo"></use>
+                    </svg>
+                </div>
+                
+                <div class="burger-menu__content">
+                    <section class="burger-menu__section burger-menu__section-dark-mode">
+                        <div class="burger-menu__dark-mode-title">Dark mode</div>
+                        <label class="burger-menu__dark-mode-toggler toggler">
+                            <input type="checkbox" class="toggler__input">
+                            <div class="toggler__state">
+                                <div class="toggler__control">
+                                    <div class="toggler__icon"></div>
+                                </div>
+                            </div>
+                        </label>
+                    </section>
+                    <section class="burger-menu__section">
+                        <div class="burger-menu__title">Elements</div>
+                        <a class="burger-menu__item" href="">Tooltip</a>
+                        <a class="burger-menu__item" href="">Custom form elements</a>
+                        <a class="burger-menu__item" href="">Calendar</a>
+                        <a class="burger-menu__item" href="">Modal Dialog</a>
+                        <a class="burger-menu__item" href="">Histogram</a>
+                        <a class="burger-menu__item" href="">Avatar</a>
+                    </section>
+                    <section class="burger-menu__section">
+                        <div class="burger-menu__title">Containers</div>
+                        <a class="burger-menu__item" href="">Tooltip</a>
+                        <a class="burger-menu__item" href="">Custom form elements</a>
+                        <a class="burger-menu__item" href="">Calendar</a>
+                        <a class="burger-menu__item" href="">Modal Dialog</a>
+                        <a class="burger-menu__item" href="">Histogram</a>
+                        <a class="burger-menu__item" href="">Avatar</a>
+                    </section>
+                    <section class="burger-menu__section">
+                        <div class="burger-menu__title">Templates</div>
+                        <a class="burger-menu__item" href="">Tooltip</a>
+                        <a class="burger-menu__item" href="">Custom form elements</a>
+                        <a class="burger-menu__item" href="">Calendar</a>
+                        <a class="burger-menu__item" href="">Modal Dialog</a>
+                        <a class="burger-menu__item" href="">Histogram</a>
+                        <a class="burger-menu__item" href="">Avatar</a>
+                    </section>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
