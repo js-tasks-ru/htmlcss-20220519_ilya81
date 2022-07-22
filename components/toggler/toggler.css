@@ -1,0 +1,74 @@
+.toggler {
+    position: relative;
+
+    --toggler-width: 52px;
+    --toggler-height: 28px;
+    --toggler-icon-width: 25px;
+    --toggler-icon-height: 25px;
+}
+.toggler__input {
+    position: absolute;
+    clip: rect(0,0,0,0);
+}
+.toggler__state {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+.toggler__control {
+    width: var(--toggler-width);
+    height: var(--toggler-height);
+    background: var(--white);
+    border: 1px solid var(--grey-2);
+    border-radius: 16px;
+    position: relative;
+
+    -webkit-transition: background var(--animation-duration) linear, border-color var(--animation-duration) linear;
+    -moz-transition: background var(--animation-duration) linear, border-color var(--animation-duration) linear;
+    -o-transition: background var(--animation-duration) linear, border-color var(--animation-duration) linear;
+    transition: background var(--animation-duration) linear, border-color var(--animation-duration) linear;
+}
+.toggler__icon {
+    width: var(--toggler-icon-width);
+    height: var(--toggler-icon-height);
+    background: var(--grey-2);
+    border-radius: 16px;
+
+    position: absolute;
+    top: 50%;
+    left: 1px;
+    transform: translate(0, -50%);
+
+    -webkit-transition:left var(--animation-duration) linear, background var(--animation-duration) linear;
+    -moz-transition: left var(--animation-duration) linear, background var(--animation-duration) linear;
+    -o-transition: left var(--animation-duration) linear, background var(--animation-duration) linear;
+    transition: left var(--animation-duration) linear, background var(--animation-duration) linear;
+}
+.toggler__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+.toggler__input:checked ~ .toggler__state .toggler__control {
+    background: var(--blue-2);
+    border-color: var(--blue-2);
+}
+.toggler__input:checked ~ .toggler__state .toggler__icon {
+    background: var(--white);
+    left: calc(var(--toggler-width) - var(--toggler-icon-width) - 1px);
+}
+
+.toggler__input:focus ~ .toggler__state .toggler__title {
+    text-decoration: underline;
+}
+
+.toggler__input:disabled ~ .toggler__state .toggler__control {
+    background: var(--grey-2);
+    border-color: var(--grey-2);
+}
+.toggler__input:disabled ~ .toggler__state .toggler__icon {
+    background: var(--grey-3);
+}
