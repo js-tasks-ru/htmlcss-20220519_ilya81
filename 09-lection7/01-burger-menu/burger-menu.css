@@ -75,13 +75,16 @@
     gap: 16px;
     border-top: var(--divider);
 }
-.burger-menu__section-switch-mode {
+.burger-menu__switch-mode {
+    width: 100%;
+    padding: 24px 0;
+
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
 }
-.burger-menu__dark-mode-title {
+.burger-menu__switch-mode-title {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
