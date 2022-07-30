@@ -9,6 +9,7 @@
 @import '../../components/page/page.css';
 @import '../../components/tabs/tabs.css';
 @import '../../components/component/component.css';
+@import '../../components/toggler/toggler.css';
 
 :root {
     --white: #ffffff;
@@ -40,7 +41,7 @@
     --width-container: 1110px;
     --default-padding-for-small-screens: 16px;
 
-    --animation-duration: 300ms;
+    --animation-duration: 250ms;
 }
 
 html, body {
